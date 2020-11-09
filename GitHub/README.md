@@ -23,13 +23,19 @@ _Todos estos cambios luego son registrados y pueden ser revertidos si es necesar
 
 Git es un sistema de control específico de versión de fuente abierta creada por Linus Torvalds en el 2005.
 
+[¿Quién es Linus Torvald?][https://www.youtube.com/watch?v=MNXIXDbEmVc]
+
 Específicamente, Git es un sistema de control de versión distribuida, lo que quiere decir que la base del código entero y su historial se encuentran disponibles en la computadora de todo desarrollador, lo cual permite un fácil acceso a las bifurcaciones y fusiones.
 
+[¿Qué es Open Source?][https://www.youtube.com/watch?v=a8fHgx9mE5U]
 
 
+## Empezemos a trabajar con Github
+
+![][Octocat.png]
 
 
-[`git`](https://git-scm.com/) es un programa que sirve para llevar el control de versiones de un proyecto informático. Puedes entenderlo como una mezcla de control de cambios de word con el versionamiento de documentos de GoogleDrive para saber qué cambios hiciste a un script, por qué y cuándo, de manera que es más fácil mantener el orden, "volver al pasado" y trabajar en paralelo con colegas.
+[`git`](https://git-scm.com/) es un programa que sirve para llevar el control de versiones de un proyecto informático. Puedes entenderlo como una mezcla de control de cambios de word con el sistema de versiones de documentos en Google Drive para saber qué cambios hiciste a un script, ¿por qué? y ¿cuándo?, de manera que es más fácil mantener el orden, "volver al pasado" y trabajar en paralelo con colegas.
 
 
 [Github](https://github.com/) Es un repositorio de código que:
@@ -39,18 +45,8 @@ Específicamente, Git es un sistema de control de versión distribuida, lo que q
 * Permite escribir/revisar código en equipo
 * Su símbolo es un gatopulpo. 
 
-![](Octocat.png)
-
-
-## Open Source
-
 
 ## ¿De dónde viene Git?
-
-
-
-
-
 
 Es muy buena idea llevar un control de versiones de tus scrips en tu carpeta `bin`.
 
@@ -82,7 +78,7 @@ Piensa en `push` para enviar y `pull` para recibir.
 
 
 
-## 1.6. Control de versiones con git y Github
+## Control de versiones con git y Github
 
 
 ### Configurando nuestro git local con Github
@@ -390,6 +386,14 @@ $ git push
 ```
 
 También puedes crear un `.gitignore` global que aplique en todos los repos de tu compu. Instrucciones [aquí](https://help.github.com/articles/ignoring-files/)
+
+
+## Github Desktop
+
+https://desktop.github.com/
+
+Guía https://docs.github.com/es/free-pro-team@latest/desktop/installing-and-configuring-github-desktop/installing-github-desktop
+
 
 
 
