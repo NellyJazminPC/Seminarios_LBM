@@ -32,7 +32,7 @@ Específicamente, Git es un sistema de control de versión distribuida, lo que q
 
 ## Empezemos a trabajar con Github
 
-![][https://github.com/NellyJazminPC/Seminarios_LBM/blob/main/GitHub/Octocat.png]
+![](https://github.com/NellyJazminPC/Seminarios_LBM/blob/main/GitHub/Octocat.png)
 
 
 [`git`](https://git-scm.com/) es un programa que sirve para llevar el control de versiones de un proyecto informático. Puedes entenderlo como una mezcla de control de cambios de word con el sistema de versiones de documentos en Google Drive para saber qué cambios hiciste a un script, ¿por qué? y ¿cuándo?, de manera que es más fácil mantener el orden, "volver al pasado" y trabajar en paralelo con colegas.
