@@ -70,7 +70,7 @@ Es recomendable leer [An Intro to Git and GitHub for Beginners (Tutorial) de Meg
 
 Piensa en `push` para enviar y `pull` para recibir.
 
-+ **Pull request**: Si se quieren agregar las modificaciones en la branch `master`, se envía una solicitud al propietario original. Es decir tú no haces `push`, le pides al propietario que haga `pull`.
++ **Pull request**: Si se quieren agregar las modificaciones en la branch `master` o `main`, se envía una solicitud al propietario original. Es decir tú no haces `push`, le pides al propietario que haga `pull`.
 
 + **Merge**: Una vez que el propietario del repositorio ha revisado y aceptado los cambios, fusiona las ramas. 
 
@@ -127,7 +127,7 @@ Para conectar ese nuevo repostorio a github:
 
 ```
 $ git remote add origin https://github.com/<username>/<repo_name>.git
-$ git push -u origin master
+$ git push -u origin main
 ```
 
 ### Ejemplo: clonar un repo.
@@ -165,7 +165,7 @@ Te permite agregar un archivo que no existía en el repositorio o prepara las mo
 ```
 $ touch ejemplo.txt
 $ git status
-On branch master
+On branch main
 Your branch is up-to-date with 'origin/main'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -246,7 +246,7 @@ Changes to be committed:
 
 #### `git push`
 
-Una vez que quieres integrar tus cambios a una rama, este comando te permite fusionar ramas. Debes decirle el origen (rama donde hiciste los commits) y el destino (por ejemplo master u otra rama).
+Una vez que quieres integrar tus cambios a una rama, este comando te permite fusionar ramas. Debes decirle el origen (rama donde hiciste los commits) y el destino (por ejemplo main u otra rama).
 
 **CUIDADO** no podrán hacer `push` porque no son propietarios de este repo. Para ello deberían hacer primero un `pull request`. 
 
