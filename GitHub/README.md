@@ -23,11 +23,11 @@ _Todos estos cambios luego son registrados y pueden ser revertidos si es necesar
 
 Git es un sistema de control específico de versión de fuente abierta creada por Linus Torvalds en el 2005.
 
-[¿Quién es Linus Torvald?][https://www.youtube.com/watch?v=MNXIXDbEmVc]
+[¿Quién es Linus Torvald?](https://www.youtube.com/watch?v=MNXIXDbEmVc)
 
 Específicamente, Git es un sistema de control de versión distribuida, lo que quiere decir que la base del código entero y su historial se encuentran disponibles en la computadora de todo desarrollador, lo cual permite un fácil acceso a las bifurcaciones y fusiones.
 
-[¿Qué es Open Source?][https://www.youtube.com/watch?v=a8fHgx9mE5U]
+[¿Qué es Open Source?](https://www.youtube.com/watch?v=a8fHgx9mE5U)
 
 
 ## Empezemos a trabajar con Github
@@ -43,10 +43,9 @@ Específicamente, Git es un sistema de control de versión distribuida, lo que q
 * Utiliza `git` para llevar un sistema de **control de versiones**,
 * Tiene una interfase Web pública
 * Permite escribir/revisar código en equipo
-* Su símbolo es un gatopulpo. 
 
 
-## ¿De dónde viene Git?
+### Algunas recomendaciones
 
 Es muy buena idea llevar un control de versiones de tus scrips en tu carpeta `bin`.
 
@@ -54,18 +53,18 @@ Sin embargo, cuando subas tu proyecto con todo y datos como un repositorio (e.g.
 
 Como introducción a `git` primero vamos a entender los principales conceptos y el [flujo de trabajo de Github leyendo esta documentación](https://guides.github.com/introduction/flow/). 
 
-Y es muy buena idea leer [An Intro to Git and GitHub for Beginners (Tutorial) de Meghan Nelson](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners).
+Es recomendable leer [An Intro to Git and GitHub for Beginners (Tutorial) de Meghan Nelson](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners).
 
 
 ### Los términos más importantes
 
-+ **Repositorio**: Se usa para organizar un proyecto. Puede contener imágenes, código, etc. Es recomendable incluir un README.
++ **Repositorio**: Se usa para organizar un proyecto. Puede contener imágenes, código, documentos, etc. Es recomendable incluir un README.
 
 + **Fork**: Se crea un fork cuando el repositorio es copiado de la cuenta de un miembro de Github a la de otro.
 
-+ **Branch**: El repositorio tiene una rama o branch principal llamada `master`, que es la "original". Se pueden crear otras ramas dentro del mismo repositorio en las cuales se pueden hacer modificaciones sin afectar el código original. Es el equivalente tener un archivo original `Tesis` y ponerle `Tesis_comentariosAsesora1` y `Tesis_comentariosAsesor2` a los archivos con los comentarios de tus asesores, mismos que eventualmente volverás a integrar en un archivo final (pero `git` lo hace todo más hermoso y organizado).
++ **Branch**: El repositorio tiene una rama o branch principal llamada `main`, que es la "original". Se pueden crear otras ramas dentro del mismo repositorio en las cuales se pueden hacer modificaciones sin afectar el código original. Es el equivalente tener un archivo original `Tesis` y ponerle `Tesis_comentariosAsesora1` y `Tesis_comentariosAsesor2` a los archivos con los comentarios de tus asesores, mismos que eventualmente volverás a integrar en un archivo final (pero `git` lo hace todo más organizado).
 
-+ **Commit**: Equivale a guardar los cambios **en git** que no es lo mismo que en el archivo. ¡Ojo! Los cambios se guardan en la branch donde trabajas. Puedes acompañar el commit de un mensaje corto para especificar qué cambios hiciste. Esto es mucho mejor que tener nombres de archivos larguísimos tratando de explicar qué versión son (e.g. `Tesis_final_comentariosAMY_DP_rev22oct2017_comentariosFran_revEnero2018_FINAL_BUENO_corrected_2.doc`).
++ **Commit**: Equivale a guardar los cambios **en git** que no es lo mismo que en el archivo. CUIDADO Los cambios se guardan en la branch donde trabajas. Puedes acompañar el commit de un mensaje corto para especificar qué cambios hiciste. Esto es mucho mejor que tener nombres de archivos larguísimos tratando de explicar qué versión son (e.g. `Tesis_final_comentariosAMY_DP_rev22oct2020_comentariosFran_revEnero2020_FINAL_BUENO_corrected_2.doc`).
 
 + **push:** para enviar los commits locales al repo online.
 
@@ -76,14 +75,9 @@ Piensa en `push` para enviar y `pull` para recibir.
 + **Merge**: Una vez que el propietario del repositorio ha revisado y aceptado los cambios, fusiona las ramas. 
 
 
-
-
-## Control de versiones con git y Github
-
-
 ### Configurando nuestro git local con Github
 
-Para poder vincular tu `git` con tu cuenta de Github necesitas cambiar **asociar tu dirección de correo electrónico principal de Github con tu git local**. Además puedes cambiar tu nombre de usuario, pero lo que realmente te vincula con Github es tu correo. 
+Para poder vincular tu `git` con tu cuenta de Github necesitas **asociar tu dirección de correo electrónico principal de Github con tu git local**. Además puedes cambiar tu nombre de usuario, pero lo que realmente te vincula con Github es tu correo. 
 
 Para cambiar tu correo necesitas seguir cualquiera de estos dos métodos:
 
@@ -91,7 +85,7 @@ Para cambiar tu correo necesitas seguir cualquiera de estos dos métodos:
 
 Lo cual abrirá una pantalla de `vim`. Edita tu nombre de usuario y cuenta de correo. Para poder "escribir en vim" presiona `I` (de insertar) donde quieras comenzar a escribir. Recuerda, para guardar y salir, tecla Esc y luego `:wq`.
 
-2) Correr:
+2) Compilar las siguientes lineas de código:
 
 `$ git config --global user.email "email@example.com"`
 
@@ -99,7 +93,7 @@ Lo cual abrirá una pantalla de `vim`. Edita tu nombre de usuario y cuenta de co
 
 Donde el texto entre comillas son tus datos.
 
-Comrpueba tu dirección es la correcta con:
+Comprueba que tu dirección es la correcta con:
 
 `$ git config user.email`
 
@@ -109,7 +103,7 @@ Debe mostrarse tu dirección correcta.
 [Referencia de lo anterior](https://help.github.com/articles/setting-your-commit-email-address-in-git/)
 
 
-### Ejemplo: vamos a crear un repo
+### Ejemplo: crear un repo
 
 #### `git init`
 Te permite crear un repo desde tu disco local. En la terminal escribe:
@@ -132,12 +126,12 @@ $ git remote add origin https://github.com/<username>/<repo_name>.git
 $ git push -u origin master
 ```
 
-### Ejemplo: vamos a clonar un repo.
+### Ejemplo: clonar un repo.
 
 #### `git clone`
 Te permite copiar un repositorio que ya existe. Cada versión de cada archivo de la historia del proyecto es descargado cuando lo ejecutas. La dirección del repo que quieres clonar puedes conseguirla en el botón verde que dice "Clone or Download" en la página principal del repo en Github.
 
-**Ojo con dónde corres `git clone`, pues tu working directory será el lugar a donde "se baje" el repo que estás clonando.**
+**CUIDADO dónde corres `git clone` (tu working directory será el lugar a donde "se baje" el repositorio que estás clonando)**
 
 ```
 $ git clone https://github.com/AliciaMstt/Repo_chocolate.git
